@@ -7,7 +7,7 @@ import java.util.Comparator;
 
 public class CardGame {
 
-    private final char[] suit = new char[] {'\u2764', '\u2660', '\u2663', '\u2666'};
+    private final String[] suit = new String[] {"\u2764", "\u2660", "\u2663", "\u2666"};
     private final String[] symbol = new String[] {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q" , "K", "A"};
 
     // Contains an ArrayList<Card> for the deckOfCards that contains all 52 cards. This is created and populated when the game is constructed.
@@ -26,11 +26,14 @@ public class CardGame {
 
     // Has a getDeck method that lists out the cards in the deck
     public ArrayList<Card> getDeckOfCards() {
-        return this.deckOfCards;
+        return deckOfCards;
     }
 
     public Card dealCard() {
-        return this.deckOfCards.get(51);
+        Card currentCard;
+        currentCard = deckOfCards.get(deckOfCards.size()-1);
+        deckOfCards.remove(deckOfCards.size()-1);
+        return currentCard;
     }
 
     public ArrayList<Card> sortDeckByNumber() {
@@ -39,7 +42,7 @@ public class CardGame {
     }
 
     public ArrayList<Card> sortDeckIntoSuits() {
-        Collections.sort(deckOfCards, (a, b) -> Character.compare(a.getSuit(), b.getSuit()));
+        Collections.sort(deckOfCards, (a, b) -> CharSequence.compare(a.getSuit(), b.getSuit()));
         return deckOfCards;
     }
 
@@ -51,10 +54,6 @@ public class CardGame {
 
 
     public static void main(String[] args) {
-
-        CardGame cards = new CardGame();
-        System.out.println(cards.shuffleDeck());
-        System.out.println(cards.dealCard());
 
     }
 }

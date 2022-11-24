@@ -1,6 +1,9 @@
 package com.nology.game.cardgame;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class CardGame {
 
@@ -22,15 +25,36 @@ public class CardGame {
     }
 
     // Has a getDeck method that lists out the cards in the deck
-
-
     public ArrayList<Card> getDeckOfCards() {
         return this.deckOfCards;
     }
 
+    public Card dealCard() {
+        return this.deckOfCards.get(51);
+    }
+
+    public ArrayList<Card> sortDeckByNumber() {
+        Collections.sort(deckOfCards, (a, b) -> Integer.compare(a.getValue(), b.getValue()));
+        return deckOfCards;
+    }
+
+    public ArrayList<Card> sortDeckIntoSuits() {
+        Collections.sort(deckOfCards, (a, b) -> Character.compare(a.getSuit(), b.getSuit()));
+        return deckOfCards;
+    }
+
+    public ArrayList<Card> shuffleDeck() {
+        //Shuffles the deck into a random order and stores the new shuffled deck back into the deckOfCards attribute.
+        Collections.shuffle(deckOfCards);
+        return deckOfCards;
+    }
+
+
     public static void main(String[] args) {
 
         CardGame cards = new CardGame();
-        System.out.println(cards.getDeckOfCards());
+        System.out.println(cards.shuffleDeck());
+        System.out.println(cards.dealCard());
+
     }
 }

@@ -23,4 +23,16 @@ public class Card {
     public String toString() {
         return this.symbol + " " + this.suit;
     }
+
+    public char getSuit() {
+        return suit;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public String getSymbol() {
+        return symbol;
+    }
 }

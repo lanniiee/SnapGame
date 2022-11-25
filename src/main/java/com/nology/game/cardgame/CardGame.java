@@ -62,7 +62,8 @@ public class CardGame {
 
 
     public static void main(String[] args) {
-
+        Snap snapGame = new Snap();
+        snapGame.runGame();
     }
 
 }

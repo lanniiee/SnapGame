@@ -67,9 +67,4 @@ public class Snap extends CardGame {
     }
 
 
-    public static void main(String[] args) {
-        Snap snap = new Snap();
-        snap.runGame();
-    }
-
 }

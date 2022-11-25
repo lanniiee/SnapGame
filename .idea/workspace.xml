@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97b8087e-f85c-43d1-9626-0e10049a46d7" name="Changes" comment="changed messages" />
+    <list default="true" id="97b8087e-f85c-43d1-9626-0e10049a46d7" name="Changes" comment="fix Game to end after Winning message">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/CardGame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +40,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Snap">
+  <component name="RunManager" selected="Application.CardGame">
     <configuration name="CardGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nology.game.cardgame.CardGame" />
       <module name="SnapGame" />
@@ -67,8 +69,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Snap" />
         <item itemvalue="Application.CardGame" />
+        <item itemvalue="Application.Snap" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669394850629</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix Game to end after Winning message">
+      <created>1669395140462</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669395140462</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,6 +176,7 @@
     <MESSAGE value="add in player's names" />
     <MESSAGE value="cleaning up code" />
     <MESSAGE value="changed messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed messages" />
+    <MESSAGE value="fix Game to end after Winning message" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Game to end after Winning message" />
   </component>
 </project>

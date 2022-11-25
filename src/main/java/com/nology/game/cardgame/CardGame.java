@@ -12,6 +12,8 @@ public class CardGame {
 
     // Contains an ArrayList<Card> for the deckOfCards that contains all 52 cards. This is created and populated when the game is constructed.
     private ArrayList<Card> deckOfCards = new ArrayList<>();
+    private ArrayList<Card> discardPile = new ArrayList<>();
+    private Card currentCard;
 
     // Has a name which is also defined in the constructor
     public CardGame() {
@@ -30,10 +32,14 @@ public class CardGame {
     }
 
     public Card dealCard() {
-        Card currentCard;
         currentCard = deckOfCards.get(deckOfCards.size()-1);
         deckOfCards.remove(deckOfCards.size()-1);
+        discard();
         return currentCard;
+    }
+
+    public void discard() {
+        discardPile.add(currentCard);
     }
 
     public ArrayList<Card> sortDeckByNumber() {
@@ -52,6 +58,9 @@ public class CardGame {
         return deckOfCards;
     }
 
+    public ArrayList<Card> getDiscardPile() {
+        return discardPile;
+    }
 
     public static void main(String[] args) {
 

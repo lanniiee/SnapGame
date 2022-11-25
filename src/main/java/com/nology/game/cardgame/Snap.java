@@ -8,17 +8,36 @@ public class Snap extends CardGame {
     private Scanner scanner = new Scanner(System.in);
     private ArrayList<Card> deckOfCards;
     private Card currentCard;
-    private Card previousCard;
+    private ArrayList<Card> discardPile = new ArrayList<>();
+    private String input;
+    private boolean playingGame = false;
 
     public Snap() {
         deckOfCards = getDeckOfCards();
+        discardPile = getDiscardPile();
         shuffleDeck();
     }
 
 
     public void runGame() {
+        System.out.println("Press Enter to start!");
+        playingGame = true;
+        while (playingGame) {
+            input = scanner.nextLine();
+            currentCard = dealCard();
+            System.out.println(currentCard);
+            if (discardPile.size() > 1) {
+                if (currentCard.getSymbol().equals(discardPile.get(discardPile.size()-2).getSymbol())) {
+                    System.out.println("Well Done! You have won!");
+                    playingGame = false;
+                }
+            }
+            if (deckOfCards.size() == 0) {
+                System.out.println("You did not win this time!");
+                playingGame = false;
+            }
 
-        System.out.println(deckOfCards);
+        }
     }
 
     public static void main(String[] args) {

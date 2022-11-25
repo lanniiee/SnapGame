@@ -33,14 +33,14 @@ public class Snap extends CardGame {
                 } else {
                     currentPlayer = playerTwo.getPlayerName();
                 }
+                System.out.println("\n" + currentPlayer + "'s turn. Press enter to deal the next card");
                 input = scanner.nextLine();
                 if (input.isEmpty()) {
                     Card currentCard = dealCard();
-                    System.out.println(currentPlayer + "'s turn.");
                     System.out.println("Current card: " + currentCard);
                     if (discardPile.size() > 1) {
                         if (currentCard.getSymbol().equals(discardPile.get(discardPile.size()-2).getSymbol())) {
-                            System.out.println("\nGAME OVER! " +currentPlayer +" have won!");
+                            System.out.println("\nSNAP! " +currentPlayer +" have won!");
                             playingGame = false;
                         }
                     }

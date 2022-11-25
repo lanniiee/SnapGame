@@ -1,13 +1,11 @@
 package com.nology.game.cardgame;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 
 public class CardGame {
 
-    private final String[] suit = new String[] {"\u2764", "\u2660", "\u2663", "\u2666"};
+    private final String[] suit = new String[] {"\u2665", "\u2660", "\u2663", "\u2666"};
     private final String[] symbol = new String[] {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q" , "K", "A"};
 
     // Contains an ArrayList<Card> for the deckOfCards that contains all 52 cards. This is created and populated when the game is constructed.
@@ -18,9 +16,9 @@ public class CardGame {
     // Has a name which is also defined in the constructor
     public CardGame() {
 
-        for (int a = 0; a < suit.length; a++){
+        for (String s : suit) {
             for (int b = 0; b < symbol.length; b++) {
-                Card card = new Card(suit[a], symbol[b], b + 2);
+                Card card = new Card(s, symbol[b], b + 2);
                 deckOfCards.add(card);
             }
         }

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97b8087e-f85c-43d1-9626-0e10049a46d7" name="Changes" comment="cleaning up code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/CardGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/Snap.java" afterDir="false" />
@@ -128,7 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669381693264</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add in player's names">
+      <created>1669393029057</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669393029057</updated>
+    </task>
+    <task id="LOCAL-00008" summary="cleaning up code">
+      <created>1669393114732</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669393114732</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +161,7 @@
     <MESSAGE value="added methods for shuffle and order cards" />
     <MESSAGE value="add deck of cards to Snap class" />
     <MESSAGE value="add in functionality to runGame method that end the game when two symbols are the same and if all cards are finished" />
+    <MESSAGE value="add in player's names" />
     <MESSAGE value="cleaning up code" />
     <option name="LAST_COMMIT_MESSAGE" value="cleaning up code" />
   </component>

@@ -40,8 +40,8 @@ public class Snap extends CardGame {
                     System.out.println("Current card: " + currentCard);
                     if (discardPile.size() > 1) {
                         if (currentCard.getSymbol().equals(discardPile.get(discardPile.size()-2).getSymbol())) {
-                            System.out.println("\nSNAP! " +currentPlayer +" have won!");
                             playingGame = false;
+                            System.out.println("\nSNAP! " +currentPlayer +" have won!");
                         }
                     }
                 }

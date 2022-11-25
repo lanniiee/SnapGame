@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97b8087e-f85c-43d1-9626-0e10049a46d7" name="Changes" comment="add deck of cards to Snap class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/CardGame.java" afterDir="false" />
+    <list default="true" id="97b8087e-f85c-43d1-9626-0e10049a46d7" name="Changes" comment="add in functionality to runGame method that end the game when two symbols are the same and if all cards are finished">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/Snap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669311127890</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add in functionality to runGame method that end the game when two symbols are the same and if all cards are finished">
+      <created>1669381288422</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669381288422</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +137,7 @@
     <MESSAGE value="created 52 cards" />
     <MESSAGE value="added methods for shuffle and order cards" />
     <MESSAGE value="add deck of cards to Snap class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add deck of cards to Snap class" />
+    <MESSAGE value="add in functionality to runGame method that end the game when two symbols are the same and if all cards are finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="add in functionality to runGame method that end the game when two symbols are the same and if all cards are finished" />
   </component>
 </project>

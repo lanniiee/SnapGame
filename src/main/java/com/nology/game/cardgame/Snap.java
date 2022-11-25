@@ -8,13 +8,11 @@ public class Snap extends CardGame {
     private final Scanner scanner = new Scanner(System.in);
     private final ArrayList<Card> deckOfCards;
     private final ArrayList<Card> discardPile;
-    private ArrayList<String> players = new ArrayList<>();
-    private Player playerOne = new Player();
-    private Player playerTwo = new Player();
+    private final ArrayList<String> players = new ArrayList<>();
+    private final Player playerOne = new Player();
+    private final Player playerTwo = new Player();
     private String input;
     private boolean playingGame = false;
-    private Card currentCard;
-    private String currentPlayer;
 
     public Snap() {
         deckOfCards = getDeckOfCards();
@@ -22,27 +20,13 @@ public class Snap extends CardGame {
         shuffleDeck();
     }
 
-    public void playerTurn() {
-        input = scanner.next();
-        if (input.isEmpty()) {
-            currentCard = dealCard();
-            System.out.println("It is turn");
-            System.out.println(currentCard);
-        }
-        if (discardPile.size() > 1) {
-            if (currentCard.getSymbol().equals(discardPile.get(discardPile.size()-1).getSymbol())) {
-                System.out.println("won!");
-                playingGame = false;
-            }
-        }
-    }
-
 
     public void runGame() {
 
         setUp();
 
-        while (playingGame == true) {
+        while (playingGame) {
+            String currentPlayer;
             for (int i = 1; i < players.size() + 1; i++) {
                 if(i%2 != 0 ) {
                     currentPlayer = playerOne.getPlayerName();

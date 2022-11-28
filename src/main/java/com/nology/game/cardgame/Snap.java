@@ -64,12 +64,11 @@ public class Snap extends CardGame {
                             String inputToLowercase = input.toLowerCase();
                             if (interval > 0 && inputToLowercase.equals("snap")) {
                                 System.out.println("\nSNAP! " +currentPlayer +" have won!");
-                                playingGame = false;
                             }
                             else {
                                 System.out.println(currentPlayer + " have failed to snap on time! Game Over! " +currentPlayer + " loses!");
-                                playingGame = false;
                             }
+                            playingGame = false;
                         }
                     }
                 }

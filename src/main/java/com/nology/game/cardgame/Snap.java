@@ -33,8 +33,10 @@ public class Snap extends CardGame {
                 } else {
                     currentPlayer = playerTwo.getPlayerName();
                 }
-                System.out.println("\n" + currentPlayer + "'s turn. Press enter to deal the next card");
-                input = scanner.nextLine();
+                if (playingGame) {
+                    System.out.println("\n" + currentPlayer + "'s turn. Press enter to deal the next card");
+                    input = scanner.nextLine();
+                }
                 if (input.isEmpty()) {
                     Card currentCard = dealCard();
                     System.out.println("Current card: " + currentCard);
@@ -45,7 +47,7 @@ public class Snap extends CardGame {
                         }
                     }
                 }
-                if (deckOfCards.size() == 0) {
+                else if (deckOfCards.size() == 0) {
                     playingGame = false;
                 }
             }

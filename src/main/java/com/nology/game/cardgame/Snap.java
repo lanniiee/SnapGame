@@ -2,6 +2,8 @@ package com.nology.game.cardgame;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Snap extends CardGame {
 
@@ -13,6 +15,16 @@ public class Snap extends CardGame {
     private final Player playerTwo = new Player();
     private String input;
     private boolean playingGame = false;
+    private final Timer timer = new Timer();
+    private int interval = 5;
+
+    private void setInterval() {
+      if (interval == 0) {
+          timer.cancel();
+      }
+      --interval;
+    }
+
 
     public Snap() {
         deckOfCards = getDeckOfCards();
@@ -42,12 +54,26 @@ public class Snap extends CardGame {
                     System.out.println("Current card: " + currentCard);
                     if (discardPile.size() > 1) {
                         if (currentCard.getSymbol().equals(discardPile.get(discardPile.size()-2).getSymbol())) {
-                            playingGame = false;
-                            System.out.println("\nSNAP! " +currentPlayer +" have won!");
+                            System.out.println("You have 5 secs to type 'snap' and press enter to win!");
+                            timer.scheduleAtFixedRate(new TimerTask() {
+                                public void run() {
+                                    setInterval();
+                                }
+                            }, 1000, 1000);
+                            input = scanner.nextLine();
+                            String inputToLowercase = input.toLowerCase();
+                            if (interval > 0 && inputToLowercase.equals("snap")) {
+                                System.out.println("\nSNAP! " +currentPlayer +" have won!");
+                                playingGame = false;
+                            }
+                            else {
+                                System.out.println(currentPlayer + " have failed to snap on time! Game Over! " +currentPlayer + " loses!");
+                                playingGame = false;
+                            }
                         }
                     }
                 }
-                else if (deckOfCards.size() == 0) {
+                else if (deckOfCards.size() == 1) {
                     playingGame = false;
                 }
             }

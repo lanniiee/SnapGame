@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97b8087e-f85c-43d1-9626-0e10049a46d7" name="Changes" comment="moved game to play on CardGame">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/myTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="97b8087e-f85c-43d1-9626-0e10049a46d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/Snap.java" afterDir="false" />
     </list>
@@ -178,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669395294198</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fixed game to end when any player gets the same card">
+      <created>1669646898527</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669646898527</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +207,7 @@
     <MESSAGE value="changed messages" />
     <MESSAGE value="fix Game to end after Winning message" />
     <MESSAGE value="moved game to play on CardGame" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved game to play on CardGame" />
+    <MESSAGE value="fixed game to end when any player gets the same card" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed game to end when any player gets the same card" />
   </component>
 </project>

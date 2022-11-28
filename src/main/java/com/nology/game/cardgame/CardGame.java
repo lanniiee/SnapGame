@@ -30,9 +30,11 @@ public class CardGame {
     }
 
     public Card dealCard() {
-        currentCard = deckOfCards.get(deckOfCards.size()-1);
-        deckOfCards.remove(deckOfCards.size()-1);
-        discard();
+        if (deckOfCards.size() > 0) {
+            currentCard = deckOfCards.get(deckOfCards.size()-1);
+            deckOfCards.remove(deckOfCards.size()-1);
+            discard();
+        }
         return currentCard;
     }
 
@@ -60,10 +62,5 @@ public class CardGame {
         return discardPile;
     }
 
-
-    public static void main(String[] args) {
-        Snap snapGame = new Snap();
-        snapGame.runGame();
-    }
 
 }

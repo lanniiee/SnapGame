@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97b8087e-f85c-43d1-9626-0e10049a46d7" name="Changes" comment="">
+    <list default="true" id="97b8087e-f85c-43d1-9626-0e10049a46d7" name="Changes" comment="delete unwanted file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/CardGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nology/game/cardgame/Snap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CardGame">
+  <component name="RunManager" selected="Application.Snap">
     <configuration name="CardGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nology.game.cardgame.CardGame" />
       <module name="SnapGame" />
@@ -83,9 +84,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Snap" />
         <item itemvalue="Application.CardGame" />
         <item itemvalue="Application.myTimer" />
-        <item itemvalue="Application.Snap" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +183,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669646898527</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add in condition for timer and snap">
+      <created>1669649172290</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669649172290</updated>
+    </task>
+    <task id="LOCAL-00014" summary="clean up code">
+      <created>1669649211625</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669649211625</updated>
+    </task>
+    <task id="LOCAL-00015" summary="delete unwanted file">
+      <created>1669649328825</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669649328825</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +230,9 @@
     <MESSAGE value="fix Game to end after Winning message" />
     <MESSAGE value="moved game to play on CardGame" />
     <MESSAGE value="fixed game to end when any player gets the same card" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed game to end when any player gets the same card" />
+    <MESSAGE value="add in condition for timer and snap" />
+    <MESSAGE value="clean up code" />
+    <MESSAGE value="delete unwanted file" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete unwanted file" />
   </component>
 </project>

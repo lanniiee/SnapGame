@@ -54,7 +54,7 @@ public class Snap extends CardGame {
                     System.out.println("Current card: " + currentCard);
                     if (discardPile.size() > 1) {
                         if (currentCard.getSymbol().equals(discardPile.get(discardPile.size()-2).getSymbol())) {
-                            System.out.println("You have 5 secs to type 'snap' and press enter to win!");
+                            System.out.println("\nYou have 5 secs to type 'snap' and press enter to win!");
                             timer.scheduleAtFixedRate(new TimerTask() {
                                 public void run() {
                                     setInterval();
@@ -66,13 +66,13 @@ public class Snap extends CardGame {
                                 System.out.println("\nSNAP! " +currentPlayer +" have won!");
                             }
                             else {
-                                System.out.println(currentPlayer + " have failed to snap on time! Game Over! " +currentPlayer + " loses!");
+                                System.out.println(currentPlayer + " is the loser! They have failed to type snap on time! GAME OVER!");
                             }
                             playingGame = false;
                         }
                     }
                 }
-                else if (deckOfCards.size() == 1) {
+                if (deckOfCards.size() == 0) {
                     playingGame = false;
                 }
             }
@@ -81,7 +81,6 @@ public class Snap extends CardGame {
     }
 
     public void setUp() {
-
         for (int i = 1; i < 3; i++) {
             System.out.println("Enter your name player " + i + ":");
             input = scanner.nextLine();
@@ -91,6 +90,11 @@ public class Snap extends CardGame {
         playerTwo.setPlayerName(players.get(1));
         System.out.println("\nSet up is ready. Press enter to start!");
         playingGame = true;
+    }
+
+    public static void main(String[] args) {
+        Snap snapGame = new Snap();
+        snapGame.runGame();
     }
 
 

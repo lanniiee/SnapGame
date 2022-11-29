@@ -1,4 +1,4 @@
-Snap-Game
+<b>Snap-Game</b>
 
 Description: 
 - It is game is to be played in the console. 
